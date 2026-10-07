@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="FARHAAN — Computer Science Engineering Student & Creative Technologist. Exploring software, data structures, AI and modern digital systems. Based in Chikmagalur, India.">
+  <meta name="keywords" content="Farhaan, Portfolio, Computer Science, Java, DSA, Web Development, AI, Chikmagalur">
+  <meta name="author" content="Farhaan">
+  <meta name="theme-color" content="#09090b">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="FARHAAN. — Creative Technologist & CSE Student">
+  <meta property="og:description"
+    content="Personal digital identity. Dark editorial futuristic portfolio exploring Java, DSA, Web Architecture and AI.">
+  <meta property="og:type" content="website">
+
+  <title>FARHAAN. — Digital Identity & Portfolio</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='900' fill='%23ccff00'>F.</text></svg>">
+</head>
+
+<body class="loading">
+
+  <!-- Ambient Film Grain & Mesh Background Layer -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="grid-backdrop" aria-hidden="true"></div>
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <div class="cursor-label" id="cursorLabel">EXPLORE</div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo magnetic-target" aria-label="Farhaan Homepage">
+        <span class="brand-name">FARHAAN<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Telemetry Status Bar (Desktop) -->
+      <div class="nav-telemetry" aria-hidden="true">
+        <span class="pulse-indicator"></span>
+        <span class="telemetry-text">CHIKMAGALUR // <span id="navTime">IST --:--:--</span></span>
+      </div>
+
+      <!-- Desktop Links -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-item magnetic-target"><span class="nav-idx">01</span>ABOUT</a></li>
+          <li><a href="#journey" class="nav-item magnetic-target"><span class="nav-idx">02</span>JOURNEY</a></li>
+          <li><a href="#skills" class="nav-item magnetic-target"><span class="nav-idx">03</span>SKILLS</a></li>
+          <li><a href="#projects" class="nav-item magnetic-target"><span class="nav-idx">04</span>WORK</a></li>
+          <li><a href="#dashboard" class="nav-item magnetic-target"><span class="nav-idx">05</span>STATUS</a></li>
+          <li><a href="#contact" class="nav-item magnetic-target"><span class="nav-idx">06</span>CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Mobile Burger) -->
+      <div class="nav-actions">
+        <button class="theme-toggle magnetic-target" id="themeToggle" aria-label="Toggle Color Theme">
+          <span class="theme-icon light-icon" title="Switch to Light Mode">☼</span>
+          <span class="theme-icon dark-icon" title="Switch to Dark Mode">☾</span>
+        </button>
+
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn magnetic-target"
+          id="navResumeBtn">
+          <span>RESUME</span>
+          <span class="arrow-up-right">↗</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <span class="burger-line top-line"></span>
+          <span class="burger-line mid-line"></span>
+          <span class="burger-line bot-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Menu Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-logo">FARHAAN.</span>
+      <span class="drawer-status">SYSTEM ACTIVE ● 2026</span>
+    </div>
+    <div class="drawer-content">
+      <ul class="drawer-links">
+        <li><a href="#about" class="drawer-link"><span class="drawer-num">01</span><span
+              class="drawer-txt">ABOUT</span></a></li>
+        <li><a href="#journey" class="drawer-link"><span class="drawer-num">02</span><span
+              class="drawer-txt">JOURNEY</span></a></li>
+        <li><a href="#skills" class="drawer-link"><span class="drawer-num">03</span><span
+              class="drawer-txt">SKILLS</span></a></li>
+        <li><a href="#projects" class="drawer-link"><span class="drawer-num">04</span><span class="drawer-txt">SELECTED
+              WORK</span></a></li>
+        <li><a href="#dashboard" class="drawer-link"><span class="drawer-num">05</span><span class="drawer-txt">CURRENT
+              STATUS</span></a></li>
+        <li><a href="#contact" class="drawer-link"><span class="drawer-num">06</span><span
+              class="drawer-txt">CONTACT</span></a></li>
+      </ul>
+      <div class="drawer-footer">
+        <div class="drawer-socials">
+          <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+          <a href="https://www.linkedin.com/in/farhan-undefined-57485a394/" target="_blank"
+            rel="noopener noreferrer">LINKEDIN ↗</a>
+          <a href="mailto:frhuuuuzzz@gmail.com">EMAIL ↗</a>
+        </div>
+        <a href="resume.pdf" target="_blank" class="drawer-cta">DOWNLOAD RESUME (PDF) ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ==================== 01 / HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+
+        <!-- Top Editorial Meta Line -->
+        <div class="hero-meta reveal-item">
+          <div class="meta-tag">
+            <span class="mono-idx">01 /</span>
+            <span class="mono-label">COMPUTER SCIENCE ENGINEERING</span>
+          </div>
+          <div class="meta-status">
+            <span class="status-pulse-dot"></span>
+            <span class="status-text">AVAILABLE TO BUILD ● STUDYING + BUILDING</span>
+          </div>
+          <div class="meta-coords">
+            <span class="mono-label">CHIKMAGALUR // 13.3161° N, 75.7720° E</span>
+          </div>
+        </div>
+
+        <!-- Massive Editorial Headline Grid -->
+        <div class="hero-headline-wrap">
+          <h1 class="hero-massive-title reveal-item">
+            <span class="title-row title-row-1">
+              <span class="text-stroke">FARHAAN</span>
+              <span class="title-accent-symbol">✦</span>
+            </span>
+            <span class="title-row title-row-2">
+              <span class="highlight-fill">BUILDS</span>
+              <span class="title-italics">DIGITAL</span>
+            </span>
+            <span class="title-row title-row-3">
+              <span>SYSTEMS<span class="accent-period">.</span></span>
+            </span>
+          </h1>
+
+          <!-- 3D Interactive Cyber Glass Orb Canvas -->
+          <div class="hero-orb-wrapper" id="heroOrbWrapper" aria-label="Interactive 3D glass cyber orb">
+            <canvas id="heroOrbCanvas"></canvas>
+            <div class="orb-badge">
+              <span class="orb-badge-icon">⎔</span>
+              <span class="orb-badge-text">INTERACTIVE CORE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Editorial Bottom Bar -->
+        <div class="hero-bottom-bar reveal-item">
+          <div class="hero-description">
+            <p class="lead-p">
+              Computer Science Engineering student bridging foundational engineering discipline with modern software,
+              algorithms, AI, and intuitive web interfaces.
+            </p>
+            <div class="hero-manifesto">
+              <span class="manifesto-chip">BUILD</span>
+              <span class="manifesto-sep">/</span>
+              <span class="manifesto-chip">LEARN</span>
+              <span class="manifesto-sep">/</span>
+              <span class="manifesto-chip">EXPERIMENT</span>
+              <span class="manifesto-sep">/</span>
+              <span class="manifesto-chip">SCALE</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary magnetic-target" id="heroViewWorkBtn">
+              <span class="btn-text">VIEW PROJECTS</span>
+              <span class="btn-icon">↓</span>
+            </a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary magnetic-target"
+              id="heroResumeBtn">
+              <span class="btn-text">DOWNLOAD RESUME</span>
+              <span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator Hint -->
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+          <span class="scroll-label">SCROLL TO EXPLORE</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== MARQUEE TICKER 1 ==================== -->
+    <div class="marquee-strip strip-top" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>JAVA</span><span class="star">✦</span>
+          <span>DSA</span><span class="star">✦</span>
+          <span>WEB ARCHITECTURE</span><span class="star">✦</span>
+          <span>ARTIFICIAL INTELLIGENCE</span><span class="star">✦</span>
+          <span>SYSTEMS</span><span class="star">✦</span>
+          <span>PYTHON</span><span class="star">✦</span>
+          <span>SQL</span><span class="star">✦</span>
+          <span>AUTOMOBILE → CSE</span><span class="star">✦</span>
+          <span>BUILD // LEARN // CREATE</span><span class="star">✦</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>JAVA</span><span class="star">✦</span>
+          <span>DSA</span><span class="star">✦</span>
+          <span>WEB ARCHITECTURE</span><span class="star">✦</span>
+          <span>ARTIFICIAL INTELLIGENCE</span><span class="star">✦</span>
+          <span>SYSTEMS</span><span class="star">✦</span>
+          <span>PYTHON</span><span class="star">✦</span>
+          <span>SQL</span><span class="star">✦</span>
+          <span>AUTOMOBILE → CSE</span><span class="star">✦</span>
+          <span>BUILD // LEARN // CREATE</span><span class="star">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== 02 / ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+
+        <!-- Section Header Index -->
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">02</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">THE IDENTITY & BACKGROUND</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[REF: BIO_GEN_02]</span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Left Column: Big Editorial Statement -->
+          <div class="about-left reveal-item">
+            <span class="editorial-kicker">BACKGROUND & TRAJECTORY</span>
+            <h2 class="editorial-h2">
+              <span>FROM</span>
+              <span class="highlight-lime">MACHINES</span>
+              <span>TO SOFTWARE.</span>
+            </h2>
+
+            <div class="about-quote-box">
+              <span class="quote-mark">“</span>
+              <p class="quote-text">
+                Understanding physical mechanics taught me how complex systems interconnect. Transitioning into computer
+                science allowed me to apply that same architectural mindset to digital logic, algorithms, and software.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Narrative & Metadata Specs -->
+          <div class="about-right reveal-item">
+            <div class="about-bio-text">
+              <p class="bio-lead">
+                I started with a <strong>Diploma in Automobile Engineering</strong> and moved into <strong>Computer
+                  Science Engineering</strong> because I became increasingly captivated by how software, computational
+                logic, and technology can solve problems at scale.
+              </p>
+              <p class="bio-sub">
+                Today, I focus my time mastering core Computer Science fundamentals — deep diving into
+                <strong>Java</strong>, <strong>Data Structures & Algorithms</strong>, full-stack <strong>Web
+                  Development</strong>, and exploring emerging tools in <strong>Artificial Intelligence</strong>.
+              </p>
+            </div>
+
+            <!-- Architectural Metadata Spec Grid -->
+            <div class="editorial-spec-grid">
+              <div class="spec-card">
+                <span class="spec-label">01 // LOCATION</span>
+                <span class="spec-value">Chikmagalur, Karnataka, India</span>
+                <span class="spec-sub">13.3161° N, 75.7720° E</span>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-label">02 // ACADEMICS</span>
+                <span class="spec-value">B.E. Computer Science Engineering</span>
+                <span class="spec-sub">DCET Lateral Entry Trajectory</span>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-label">03 // ROOTS</span>
+                <span class="spec-value">Automobile Engineering</span>
+                <span class="spec-sub">Mechanical & Systems Discipline</span>
+              </div>
+
+              <div class="spec-card">
+                <span class="spec-label">04 // CURRENT PURSUIT</span>
+                <span class="spec-value">Building + Learning Everyday</span>
+                <span class="spec-sub">Java • DSA • Web • AI Tools</span>
+              </div>
+            </div>
+
+            <!-- Mini Terminal Telemetry -->
+            <div class="editorial-terminal">
+              <div class="terminal-bar">
+                <span class="t-dot t-red"></span>
+                <span class="t-dot t-yellow"></span>
+                <span class="t-dot t-green"></span>
+                <span class="t-title">farhaan@core-terminal: ~/profile</span>
+              </div>
+              <div class="terminal-body">
+                <code><span class="t-cmd">$ cat interests.json</span></code>
+                <code>{</code>
+                <code>&nbsp;&nbsp;<span class="t-key">"core"</span>: [<span class="t-str">"Java"</span>, <span class="t-str">"DSA"</span>, <span class="t-str">"Problem Solving"</span>],</code>
+                <code>&nbsp;&nbsp;<span class="t-key">"web"</span>: [<span class="t-str">"Modern HTML/CSS"</span>, <span class="t-str">"JavaScript"</span>, <span class="t-str">"Clean Architecture"</span>],</code>
+                <code>&nbsp;&nbsp;<span class="t-key">"frontier"</span>: [<span class="t-str">"Artificial Intelligence"</span>, <span class="t-str">"Python"</span>, <span class="t-str">"Tech Entrepreneurship"</span>]</code>
+                <code>}</code>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 03 / JOURNEY SECTION ==================== -->
+    <section class="section journey-section" id="journey">
+      <div class="section-container">
+
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">03</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">CHRONOLOGY & EVOLUTION</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[TIMELINE // 2023 - 2026+]</span>
+          </div>
+        </div>
+
+        <div class="journey-header reveal-item">
+          <h2 class="section-headline">
+            THE EVOLUTIONARY<br>
+            <span class="outline-txt">PATHWAY.</span>
+          </h2>
+          <p class="section-subtext">
+            A progression grounded in hands-on mechanics, operational experience, and an ongoing ascent into computer
+            science engineering.
+          </p>
+        </div>
+
+        <!-- Fashion Editorial Timeline -->
+        <div class="magazine-timeline">
+
+          <!-- Timeline Item 1 -->
+          <article class="timeline-row reveal-item" data-year="2023">
+            <div class="timeline-year-col">
+              <span class="huge-year">2023</span>
+              <span class="year-tag">FOUNDATION</span>
+            </div>
+            <div class="timeline-connector">
+              <div class="node-dot"></div>
+              <div class="connector-line"></div>
+            </div>
+            <div class="timeline-content-col">
+              <div class="timeline-badge">ACADEMIC DIPLOMA</div>
+              <h3 class="timeline-title">Automobile Engineering</h3>
+              <p class="timeline-desc">
+                Developed analytical rigor, systems thinking, thermodynamic mechanics, and precise technical
+                problem-solving. Graduated with deep appreciation for how mechanical architectures function.
+              </p>
+              <div class="timeline-tags">
+                <span>Mechanical Systems</span>
+                <span>Engineering Physics</span>
+                <span>Diagnostics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2 -->
+          <article class="timeline-row reveal-item" data-year="2025">
+            <div class="timeline-year-col">
+              <span class="huge-year">2025</span>
+              <span class="year-tag">EXPERIENCE</span>
+            </div>
+            <div class="timeline-connector">
+              <div class="node-dot"></div>
+              <div class="connector-line"></div>
+            </div>
+            <div class="timeline-content-col">
+              <div class="timeline-badge">INDUSTRY EXPOSURE</div>
+              <h3 class="timeline-title">Customer Service & Automotive Operations</h3>
+              <p class="timeline-desc">
+                Gained real-world operational exposure, communication agility, and workflow management in professional
+                automotive client environments. Cultivated work ethics, time efficiency, and structured execution.
+              </p>
+              <div class="timeline-tags">
+                <span>Client Operations</span>
+                <span>Workflow Optimization</span>
+                <span>Problem Resolution</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3 -->
+          <article class="timeline-row reveal-item" data-year="2026">
+            <div class="timeline-year-col">
+              <span class="huge-year">2026</span>
+              <span class="year-tag">PIVOT</span>
+            </div>
+            <div class="timeline-connector">
+              <div class="node-dot"></div>
+              <div class="connector-line"></div>
+            </div>
+            <div class="timeline-content-col">
+              <div class="timeline-badge">UNDERGRADUATE DEGREE</div>
+              <h3 class="timeline-title">B.E. Computer Science Engineering</h3>
+              <p class="timeline-desc">
+                Secured DCET Lateral Entry into Bachelor of Engineering in Computer Science. Immersing into
+                Object-Oriented Programming (Java), Data Structures, Algorithms, Database Management, and Operating
+                Systems.
+              </p>
+              <div class="timeline-tags">
+                <span>Computer Science</span>
+                <span>Java & DSA</span>
+                <span>Database Systems</span>
+                <span>Software Principles</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 4 (NOW) -->
+          <article class="timeline-row timeline-row-current reveal-item" data-year="NOW">
+            <div class="timeline-year-col">
+              <span class="huge-year highlight-year">NOW</span>
+              <span class="year-tag active-tag">CURRENT HORIZON</span>
+            </div>
+            <div class="timeline-connector">
+              <div class="node-dot pulsing-node"></div>
+              <div class="connector-line"></div>
+            </div>
+            <div class="timeline-content-col highlight-content">
+              <div class="timeline-badge active-badge">ACTIVE DEVELOPMENT</div>
+              <h3 class="timeline-title">Building Software & Exploring AI</h3>
+              <p class="timeline-desc">
+                Actively coding algorithmic solutions, building responsive web applications, and experimenting with AI
+                tooling to turn conceptual ideas into high-performance software artifacts.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag-accent">Algorithmic Problem Solving</span>
+                <span class="tag-accent">Full-Stack Exploration</span>
+                <span class="tag-accent">AI Applications</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 04 / SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="section-container">
+
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">04</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">TOOLKIT & CAPABILITIES</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[NO PROGRESS BARS // PURE PROFICIENCY]</span>
+          </div>
+        </div>
+
+        <div class="skills-headline-wrap reveal-item">
+          <div class="skills-kicker">SKILLS IN MOTION</div>
+          <h2 class="section-headline">
+            THINGS I’M<br>
+            <span class="highlight-lime">LEARNING & BUILDING.</span>
+          </h2>
+          <p class="skills-sub">
+            Interactive digital stickers. Hover to inspect magnetic resonance and technical domains.
+          </p>
+        </div>
+
+        <!-- Digital Sticker Grid (Asymmetric & Interactive) -->
+        <div class="sticker-canvas" id="stickerCanvas">
+
+          <!-- Card 1: Java (Major) -->
+          <div class="skill-card card-major card-rotate-1 reveal-item" data-skill="java">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">01</span>
+                <span class="card-cat">CORE BACKEND</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">JAVA</span>
+                <span class="card-meta">OOP • Collections • JVM</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-pill">PRIMARY STRENGTH</span>
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: DSA (Major) -->
+          <div class="skill-card card-major card-rotate-2 reveal-item" data-skill="dsa">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">02</span>
+                <span class="card-cat">ALGORITHMS</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">DSA</span>
+                <span class="card-meta">Trees • Graphs • Dynamic Prog</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-pill">PROBLEM SOLVING</span>
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: C (Standard) -->
+          <div class="skill-card card-mid card-rotate-3 reveal-item" data-skill="c">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">03</span>
+                <span class="card-cat">SYSTEMS</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">C</span>
+                <span class="card-meta">Pointers • Memory • Logic</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Python (Standard) -->
+          <div class="skill-card card-mid card-rotate-4 reveal-item" data-skill="python">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">04</span>
+                <span class="card-cat">DATA & AI</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">PYTHON</span>
+                <span class="card-meta">Scripting • Automation • AI APIs</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: HTML5 & CSS3 (Wide) -->
+          <div class="skill-card card-wide card-rotate-1 reveal-item" data-skill="frontend">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">05</span>
+                <span class="card-cat">WEB FOUNDATIONS</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">HTML5 / CSS3</span>
+                <span class="card-meta">Modern Layouts • Glassmorphism • Fluid Design Systems</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-pill">CREATIVE UI</span>
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: JavaScript (Major) -->
+          <div class="skill-card card-major card-rotate-2 reveal-item" data-skill="javascript">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">06</span>
+                <span class="card-cat">INTERACTIVITY</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">JAVASCRIPT</span>
+                <span class="card-meta">DOM Engine • ES6+ • Canvas • Async</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-pill">VANILLA POWER</span>
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: SQL (Standard) -->
+          <div class="skill-card card-mid card-rotate-3 reveal-item" data-skill="sql">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">07</span>
+                <span class="card-cat">DATABASES</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">SQL</span>
+                <span class="card-meta">Relational Schemas • Queries • CRUD</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Git (Standard) -->
+          <div class="skill-card card-mid card-rotate-4 reveal-item" data-skill="git">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">08</span>
+                <span class="card-cat">VERSION CONTROL</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">GIT</span>
+                <span class="card-meta">Branching • GitHub Workflows</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Artificial Intelligence (Major) -->
+          <div class="skill-card card-major card-highlight card-rotate-1 reveal-item" data-skill="ai">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">09</span>
+                <span class="card-cat">FRONTIER TECH</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">AI & ML</span>
+                <span class="card-meta">LLM Prompting • Agents • Workflows</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-pill pulse-pill">EXPLORING EXPONENTIALLY</span>
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10: Tech & Entrepreneurship -->
+          <div class="skill-card card-mid card-rotate-2 reveal-item" data-skill="entrepreneurship">
+            <div class="card-inner">
+              <div class="card-top">
+                <span class="card-num">10</span>
+                <span class="card-cat">MINDSET</span>
+              </div>
+              <div class="card-main">
+                <span class="card-title">TECH VENTURES</span>
+                <span class="card-meta">Product Building • Scalability</span>
+              </div>
+              <div class="card-footer">
+                <span class="card-arrow">↗</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 05 / SELECTED WORK SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="section-container">
+
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">05</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">SELECTED WORK & ARTIFACTS</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[PORTFOLIO CATALOGUE // 2026]</span>
+          </div>
+        </div>
+
+        <div class="projects-headline-bar reveal-item">
+          <div>
+            <span class="editorial-kicker">ENGINEERING & DESIGN CASES</span>
+            <h2 class="section-headline">
+              SELECTED<br>
+              <span class="outline-txt">WORKS.</span>
+            </h2>
+          </div>
+          <p class="projects-note">
+            Curated software demonstrations built to explore performance, algorithmic elegance, and distinct visual
+            ergonomics.
+          </p>
+        </div>
+
+        <!-- Asymmetric Editorial Project Grid -->
+        <div class="editorial-project-grid">
+
+          <!-- PROJECT 01: Large Horizontal Card -->
+          <article class="project-item project-layout-wide reveal-item">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-01.jpg" alt="Personal Digital Identity Portfolio Visual"
+                class="project-img" loading="lazy">
+              <div class="project-media-overlay"></div>
+              <div class="project-floating-tag">PROJECT // 01</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category">WEB ARCHITECTURE & EDITORIAL DESIGN</span>
+                <span class="project-year">2026</span>
+              </div>
+
+              <h3 class="project-title">Personal Digital Identity</h3>
+
+              <p class="project-summary">
+                An ultra-aesthetic, dark editorial portfolio combining Japanese typography aesthetics, fashion editorial
+                structure, 3D interactive canvas core, and high-performance vanilla web architecture.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-tag">HTML5</span>
+                <span class="stack-tag">VANILLA CSS</span>
+                <span class="stack-tag">VANILLA JS</span>
+                <span class="stack-tag">CANVAS 2D/3D</span>
+              </div>
+
+              <div class="project-action-links">
+                <a href="#hero" class="project-btn btn-view magnetic-target">
+                  <span>EXPLORE EXPERIENCE</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer"
+                  class="project-btn btn-code magnetic-target">
+                  <span>VIEW REPO</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Vertical Card (Java / DSA) -->
+          <article class="project-item project-layout-tall reveal-item">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-02.jpg" alt="Java Algorithm Visualizer & DSA Engine" class="project-img"
+                loading="lazy">
+              <div class="project-media-overlay"></div>
+              <div class="project-floating-tag">PROJECT // 02</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category">JAVA & ALGORITHMS</span>
+                <span class="project-year">2026</span>
+              </div>
+
+              <h3 class="project-title">Java / DSA Algorithm Visualizer</h3>
+
+              <p class="project-summary">
+                A structured computational workbench and visualizer for graph traversals, Dijkstra’s shortest path,
+                sorting routines, and dynamic memory representations in Java.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-tag">JAVA</span>
+                <span class="stack-tag">DSA</span>
+                <span class="stack-tag">OOP</span>
+                <span class="stack-tag">DATA STRUCTURES</span>
+              </div>
+
+              <div class="project-action-links">
+                <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer"
+                  class="project-btn btn-view magnetic-target">
+                  <span>INSPECT SOURCE</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer"
+                  class="project-btn btn-code magnetic-target">
+                  <span>CODE ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Asymmetrical Card (Web / Data Project) -->
+          <article class="project-item project-layout-card reveal-item">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-03.jpg" alt="Web & Data Analytics Platform" class="project-img"
+                loading="lazy">
+              <div class="project-media-overlay"></div>
+              <div class="project-floating-tag">PROJECT // 03</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-category">FULL STACK & DATA</span>
+                <span class="project-year">2026</span>
+              </div>
+
+              <h3 class="project-title">Web & Data Analytics Platform</h3>
+
+              <p class="project-summary">
+                A modular data visualization dashboard engineered for telemetry analysis, structured SQL queries, and
+                reactive interface metrics with clean dark-mode visuals.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="stack-tag">JAVASCRIPT</span>
+                <span class="stack-tag">SQL</span>
+                <span class="stack-tag">REST APIS</span>
+                <span class="stack-tag">UI/UX</span>
+              </div>
+
+              <div class="project-action-links">
+                <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer"
+                  class="project-btn btn-view magnetic-target">
+                  <span>VIEW PROJECT</span>
+                  <span class="btn-arrow">↗</span>
+                </a>
+                <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer"
+                  class="project-btn btn-code magnetic-target">
+                  <span>CODE ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 06 / STATUS DASHBOARD ==================== -->
+    <section class="section dashboard-section" id="dashboard">
+      <div class="section-container">
+
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">06</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">LIVE STATUS DASHBOARD</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[STATE // CONTINUOUS EXECUTION]</span>
+          </div>
+        </div>
+
+        <div class="dashboard-box reveal-item">
+          <div class="dash-top-bar">
+            <div class="dash-status-badge">
+              <span class="radar-dot"></span>
+              <span class="dash-status-label">STATUS — CURRENTLY BUILDING & LEARNING</span>
+            </div>
+            <div class="dash-timestamp">
+              <span class="mono-label">SYSTEM CLOCK:</span>
+              <span class="mono-val" id="dashClock">2026-10-07 15:34:28 IST</span>
+            </div>
+          </div>
+
+          <div class="dash-tasks-grid">
+
+            <div class="dash-task-item">
+              <div class="task-num">01</div>
+              <div class="task-details">
+                <h4 class="task-title">Learning Java & Backend Architecture</h4>
+                <p class="task-desc">Mastering object-oriented principles, design patterns, multithreading & JVM memory
+                  internals.</p>
+              </div>
+              <div class="task-state state-active">IN PROGRESS</div>
+            </div>
+
+            <div class="dash-task-item">
+              <div class="task-num">02</div>
+              <div class="task-details">
+                <h4 class="task-title">Practicing Data Structures & Algorithms</h4>
+                <p class="task-desc">Solving LeetCode problem sets, optimizing time/space complexity, arrays, trees,
+                  recursion, and dynamic programming.</p>
+              </div>
+              <div class="task-state state-active">ACTIVE DAILY</div>
+            </div>
+
+            <div class="dash-task-item">
+              <div class="task-num">03</div>
+              <div class="task-details">
+                <h4 class="task-title">Building Creative Web Projects</h4>
+                <p class="task-desc">Developing bespoke frontend interfaces, custom animations, lightweight
+                  architectures without heavy dependencies.</p>
+              </div>
+              <div class="task-state state-active">ITERATING</div>
+            </div>
+
+            <div class="dash-task-item">
+              <div class="task-num">04</div>
+              <div class="task-details">
+                <h4 class="task-title">Exploring Artificial Intelligence & Tooling</h4>
+                <p class="task-desc">Experimenting with agentic coding, AI API integrations, prompt engineering, and
+                  intelligent developer automation.</p>
+              </div>
+              <div class="task-state state-active">EXPLORING</div>
+            </div>
+
+            <div class="dash-task-item">
+              <div class="task-num">05</div>
+              <div class="task-details">
+                <h4 class="task-title">Mastering SQL & Relational Data</h4>
+                <p class="task-desc">Designing normalized schemas, complex joins, indexing strategies, and database
+                  query optimizations.</p>
+              </div>
+              <div class="task-state state-active">LEARNING</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 07 / ACHIEVEMENTS & MILESTONES ==================== -->
+    <section class="section achievements-section" id="achievements">
+      <div class="section-container">
+
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">07</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">CREDENTIALS & MILESTONES</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[INDEX // AUTHENTIC RECORDS]</span>
+          </div>
+        </div>
+
+        <div class="achievements-wrap reveal-item">
+          <h2 class="section-headline">
+            ACADEMIC &<br>
+            <span class="highlight-lime">PROFESSIONAL MILESTONES.</span>
+          </h2>
+
+          <div class="credentials-index-table">
+
+            <div class="cred-row">
+              <span class="cred-index">01</span>
+              <div class="cred-main">
+                <h3 class="cred-name">Diploma in Automobile Engineering</h3>
+                <span class="cred-sub">Technical Board Qualification • Completed</span>
+              </div>
+              <span class="cred-category">DIPLOMA DEGREE</span>
+              <span class="cred-status-tag">COMPLETED</span>
+            </div>
+
+            <div class="cred-row">
+              <span class="cred-index">02</span>
+              <div class="cred-main">
+                <h3 class="cred-name">B.E. Computer Science Engineering</h3>
+                <span class="cred-sub">Undergraduate Engineering Degree</span>
+              </div>
+              <span class="cred-category">DEGREE (B.E.)</span>
+              <span class="cred-status-tag tag-active">PURSUING</span>
+            </div>
+
+            <div class="cred-row">
+              <span class="cred-index">03</span>
+              <div class="cred-main">
+                <h3 class="cred-name">DCET Lateral Entry Qualification</h3>
+                <span class="cred-sub">Merit-based transition into CSE Undergraduate Program</span>
+              </div>
+              <span class="cred-category">COMPETITIVE EXAM</span>
+              <span class="cred-status-tag">QUALIFIED</span>
+            </div>
+
+            <div class="cred-row">
+              <span class="cred-index">04</span>
+              <div class="cred-main">
+                <h3 class="cred-name">Professional Industry Experience</h3>
+                <span class="cred-sub">Customer Service & Operations in Automotive Field</span>
+              </div>
+              <span class="cred-category">WORK EXPERIENCE</span>
+              <span class="cred-status-tag">VERIFIED</span>
+            </div>
+
+            <div class="cred-row">
+              <span class="cred-index">05</span>
+              <div class="cred-main">
+                <h3 class="cred-name">Technical Projects & Problem Solving</h3>
+                <span class="cred-sub">Software implementations in Java, Web Architecture & Data</span>
+              </div>
+              <span class="cred-category">PROJECT REPOSITORY</span>
+              <span class="cred-status-tag tag-active">ACTIVE</span>
+            </div>
+
+            <div class="cred-row">
+              <span class="cred-index">06</span>
+              <div class="cred-main">
+                <h3 class="cred-name">Certifications & Continuous Upskilling</h3>
+                <span class="cred-sub">Ongoing certifications in Java, DSA, and modern technologies</span>
+              </div>
+              <span class="cred-category">CERTIFICATIONS</span>
+              <span class="cred-status-tag">EXPANDING</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 08 / RESUME CALLOUT ==================== -->
+    <section class="section resume-callout-section" id="resume-section">
+      <div class="section-container">
+
+        <div class="resume-banner-box reveal-item">
+          <div class="banner-grain"></div>
+          <div class="banner-top">
+            <span class="mono-label">08 // DOCUMENT ARCHIVE</span>
+            <span class="mono-label">PDF FILE READY (106 KB)</span>
+          </div>
+
+          <div class="banner-headline-wrap">
+            <h2 class="banner-huge-text">
+              THE<br>
+              <span class="highlight-lime">SHORT</span><br>
+              VERSION.
+            </h2>
+          </div>
+
+          <div class="banner-bottom">
+            <div class="banner-prompt">
+              <p class="prompt-title">Want the complete picture?</p>
+              <p class="prompt-sub">Download verified resume covering academic history, technical proficiencies, project
+                records, and contact credentials.</p>
+            </div>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-large magnetic-target" id="downloadResumeMainBtn">
+              <span class="btn-text">DOWNLOAD RESUME</span>
+              <span class="btn-icon">↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 09 / CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+
+        <div class="section-index-bar reveal-item">
+          <div class="idx-left">
+            <span class="idx-number">09</span>
+            <span class="idx-slash">/</span>
+            <span class="idx-title">INITIALIZE DIALOGUE</span>
+          </div>
+          <div class="idx-right">
+            <span class="idx-code">[COMM // OPEN FOR OPPORTUNITIES]</span>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-left reveal-item">
+            <span class="editorial-kicker">GET IN TOUCH</span>
+            <h2 class="contact-huge-headline">
+              LET’S<br>
+              <span class="highlight-lime">MAKE</span><br>
+              SOMETHING<span class="accent-period">.</span>
+            </h2>
+            <p class="contact-subhead">
+              Got a project, an internship opportunity, or an idea to build? I’m always open to collaborating on
+              meaningful software and challenging engineering problems.
+            </p>
+
+            <!-- Direct Email Copy Block -->
+            <div class="email-copy-card">
+              <div class="email-info">
+                <span class="email-label">DIRECT EMAIL</span>
+                <span class="email-address" id="emailText">frhuuuuzzz@gmail.com</span>
+              </div>
+              <button class="btn-copy-email magnetic-target" id="copyEmailBtn"
+                aria-label="Copy email address to clipboard">
+                <span id="copyBtnText">COPY EMAIL</span>
+                <span class="copy-icon">⎘</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Links & Channels -->
+          <div class="contact-right reveal-item">
+            <div class="contact-channel-list">
+
+              <!-- Channel: Email Direct Link -->
+              <a href="mailto:frhuuuuzzz@gmail.com" class="channel-card magnetic-target">
+                <div class="channel-left">
+                  <span class="channel-num">01</span>
+                  <div class="channel-names">
+                    <span class="channel-title">EMAIL INBOX</span>
+                    <span class="channel-link">frhuuuuzzz@gmail.com</span>
+                  </div>
+                </div>
+                <div class="channel-action">
+                  <span class="channel-arrow">↗</span>
+                </div>
+              </a>
+
+              <!-- Channel: GitHub -->
+              <a href="https://github.com/frhuuuuzzz/frhuuuuzzz" target="_blank" rel="noopener noreferrer"
+                class="channel-card magnetic-target">
+                <div class="channel-left">
+                  <span class="channel-num">02</span>
+                  <div class="channel-names">
+                    <span class="channel-title">GITHUB PROFILE</span>
+                    <span class="channel-link">github.com/frhuuuuzzz</span>
+                  </div>
+                </div>
+                <div class="channel-action">
+                  <span class="channel-arrow">↗</span>
+                </div>
+              </a>
+
+              <!-- Channel: LinkedIn -->
+              <a href="https://www.linkedin.com/in/farhan-undefined-57485a394/" target="_blank"
+                rel="noopener noreferrer" class="channel-card magnetic-target">
+                <div class="channel-left">
+                  <span class="channel-num">03</span>
+                  <div class="channel-names">
+                    <span class="channel-title">LINKEDIN NETWORK</span>
+                    <span class="channel-link">linkedin.com/in/farhan</span>
+                  </div>
+                </div>
+                <div class="channel-action">
+                  <span class="channel-arrow">↗</span>
+                </div>
+              </a>
+
+              <!-- Channel: Location Telemetry -->
+              <div class="channel-card channel-info-only">
+                <div class="channel-left">
+                  <span class="channel-num">04</span>
+                  <div class="channel-names">
+                    <span class="channel-title">GEOLOCATION</span>
+                    <span class="channel-link">Chikmagalur, Karnataka, India (13.3161° N)</span>
+                  </div>
+                </div>
+                <div class="channel-action">
+                  <span class="status-live-badge">LOCAL</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 10 / MINIMAL FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <span class="footer-brand">FARHAAN<span class="brand-dot">.</span></span>
+        <span class="footer-tagline">ENGINEERING • CODE • SYSTEMS • CREATIVITY</span>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-meta">
+          DESIGNED + BUILT WITH HTML, CSS & JAVASCRIPT.
+        </p>
+        <span class="footer-copyright">© 2026 FARHAAN. ALL RIGHTS RESERVED.</span>
+      </div>
+
+      <div class="footer-right">
+        <button class="back-to-top-btn magnetic-target" id="backToTopBtn" aria-label="Scroll back to top of page">
+          <span>BACK TO TOP</span>
+          <span class="arrow-up">↑</span>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-text" id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
